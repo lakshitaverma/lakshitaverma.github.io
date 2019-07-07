@@ -93,7 +93,7 @@ Design and Developed by: goldenmace.in
 *************************/
   var win = $(window),
     foo = $('#typer');
-foo.typer(['<h1><span class="blue-text">frontend</span> developer</h1>', '<h1><span class="blue-text">Backend</span> developer</h1>', '<h1><span class="blue-text">Product</span> manager</h1>']);
+foo.typer(['<h1><span class="blue-text">frontend</span> developer</h1>', '<h1><span class="blue-text">Fullstack</span> developer</h1>', '<h1><span class="blue-text">Entrepreneur</span> at heart</h1>']);
 
 /*************************
           Skill
