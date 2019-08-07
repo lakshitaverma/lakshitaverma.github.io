@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Mycaptain</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <style type="text/css">
+    body{ /* for demo purpose only */
+    overflow-x:hidden;
+    background-color: #f4f4f4;
+  }
+
+  .navbar-default .navbar-nav > li > a{
+    color: #000;
+    font-weight: 700;
+  }
+
+  a{
+    color: white;
+  }
+
+      span.roll {
+  background:url(images/01.jpg) center center no-repeat #8c8c8c;
+  height: 93%;
+  position: absolute;
+  width: 90%;
+  z-index: 10;  
+ /* -webkit-box-shadow: 0px 0px 4px #000;
+  -moz-box-shadow: 0px 0px 4px  #000;
+  box-shadow: 0px 0px 4px  #000; */
+}
+
+.first-div-margin{
+  margin: 0 auto;
+}
+
+.navbar-div{
+  background-color: #f4f4f4;
+  box-shadow: 0px 2px 17px grey;
+}
+
+.logo-bg{
+  background-color: #f4f4f4;
+  width:275px;
+}
+
+.logo-text{
+  font-weight:700;
+  color:black;
+  font-size:22px;
+}
+
+.second-div-pos{
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.discover-div{
+  min-height: 406px;
+  border-bottom:1px solid #ddd;
+}
+
+.discover-padding{
+  padding: 100px 0 20px;
+}
+
+.climber-div{
+  margin-top: -62px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discover-text{
+  font-size:30px;
+  font-weight:700;
+}
+
+.down-icon-div{
+  bottom: 55px;
+  text-align: center;
+  width: 100%;
+}
+
+.down-icon-size{
+  font-size:50px;
+}
+
+.part-2-div{
+  border-bottom:1px solid #ddd;
+}
+
+.part-2-img-div{
+  margin-top:150px;
+  margin-bottom:27px;
+}
+
+.part-2-margin{
+  margin-top:30px;
+}
+
+.part-2-text{
+  font-size:16px;
+  font-weight:700;
+}
+
+.part-2-icon{
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+}
+
+.part-3-bg{
+  background-image:url('img/background.jpg');
+}
+
+.aseem-bg-color{
+  background-color:#ef4665;
+  height:668px;
+}
+
+.aseem-img-margin{
+  margin-top:100px;
+}
+
+.aseem-img{
+  width:250px;
+}
+
+.aseem-text-margin{
+  margin-top:50px;
+}
+
+.aseem-text{
+  font-weight:700;
+}
+
+.aseem-link{
+  background-color:#b0344a;
+  padding:10px;
+  color:#fa6d87;
+}
+
+.aseem-icon-pos{
+  position:absolute;
+  bottom:0;
+  left:40%;
+}
+
+.mycaptain-bg-color{
+  background-color:#87d4ea;
+  height:680px;
+}
+
+.mycaptain-icon-pos{
+  position:absolute;
+  bottom:2%;
+  left:40%;
+}
+
+.mycaptain-link{
+  background-color:#649cad;
+  padding:10px;
+  color:#87d4ea;
+}
+
+.climberorg-bg-color{
+  background-color:#ffde25;
+  height:680px;
+}
+
+.climberorg-img{
+  width:220px;
+}
+
+.climberorg-link{
+  background-color:#bca41b;
+  padding:10px;
+  color:#ffde25;
+}
+
+.part-4-div{
+  background-color:#f4f4f4;
+  margin-top:50px;
+}
+
+.part-4-div-bg{
+  background-color:#959595;
+  margin-top:200px;
+}
+
+.part-4-div-2-bg{
+  background-color:#959595;
+  margin-top:100px;
+}
+
+.part-4-text-margin{
+  margin-top:30px;
+}
+
+.part-4-text{
+  color:#eceaea;
+  font-size:18px;
+}
+
+.part-4-img-div-margin{
+  margin-top:-20px;
+  margin-bottom:-20px;
+}
+
+.part-4-img-bg{
+  background-color:white;
+}
+
+.part-4-img{
+  padding:30px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.part-4-margin{
+  margin-left:20px;
+}
+
+.part-4-right-icon{
+  font-size:25px;
+  color:#c1c0c0;
+}
+
+.part-4-down-icon{
+  margin-top:100px;
+  text-align: center;
+  width: 100%;
+}
+
+.part-5-div{
+  background-color:#f4f4f4;
+  margin-bottom:50px;
+}
+
+.part-5-div-margin{
+  margin-top:130px;
+}
+
+.part-5-text-margin{
+  margin-left:50px;
+}
+
+.part-5-heading{
+  font-weight:700;
+  font-size:18px;
+}
+
+.part-5-text-div{
+  margin-top:30px;
+}
+
+.part-5-text{
+  font-weight:700;
+  font-size:15px;
+}
+
+.icon-facebook{
+  color:#6c6b6b;
+  font-size:18px;
+}
+
+.fa-tumblr-square,.fa-linkedin-square{
+  color:#6c6b6b;
+  font-size:18px;
+  padding-left:10px;
+}
+
+.part-5-icon-pos{
+  text-align: center;
+  width: 100%;
+}
+
+.part-6-div{
+  background-color:#f4f4f4;
+}
+
+.part-6-div-margin{
+  margin-left:100px;
+}
+
+.part-6-text{
+  font-size:15px;
+}
+
+.part-6-book-margin{
+  margin-top:10px;
+}
+
+.part-6-fb-icon{
+  margin-top:40%;
+  color:#6c6b6b;
+  font-size:80px;
+  color:white;
+}
+
+.footer-div{
+  background-color:#484848;
+  margin-top:50px;
+}
+
+.footer-text-div{
+  padding:20px;
+  font-size:15px;
+  font-weight:700;
+  color:#dddddd;
+}
+
+.footer-padding{
+  padding-left:30px;
+}
+
+.copyright-text{
+  padding:20px;
+  font-size:15px;
+  font-weight:700;
+  color:#dddddd;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+<div>
+  <div class="col-sm-12 first-div-margin">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-div">
+      <div class="container-fluid">
+       <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand logo-bg" href="index.htmml"><img style="display:inline;" src="img/climberguy.svg"><span class="logo-text">THE CLIMBER</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#part_3_my-captain">MY CAPTAIN</a></li>
+            <li><a href="#part_3_climber">CLIMBER ORG</a></li>
+            <li><a href="#part_3_aseem">PROJECT ASEEM</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact_us">CONTACT US</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+  <div class="second-div-pos"></div>
+
+  <section class="discover-div">
+    <div class="container discover-padding">
+      <div class="climber-div">
+        <img src="img/climberlogo.svg">
+      </div>
+      <div class="text-center discover-text">DISCOVER AND PERSUE YOUR PASSION</div>
+      <div class="down-icon-div">
+        <a style="color:#333;" href="#part_2"><i class="fa fa-angle-down down-icon-size" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="row part-2-div" id="part_2">
+    <div class="col-sm-12 text-center part-2-img-div">
+    <img src="img/4peopleillustration.svg">
+    </div>
+    <div class="col-sm-12">
+     <div class="col-sm-3">
+       
+     </div>
+     <div class="col-sm-6 part-2-margin">
+       <span class="part-2-text">
+        My Captain is a youth-mentoring-youth initiative, where graduate students with outstanding achievements in the fields of their passions, mentor and guide young students who share similar aspirations. The students choose their passions and interests, find Captains and connect with them. The students (and even their parents) will be able to interact with Captains.
+      </span>
+     </div>
+     <div class="col-sm-3">
+       
+     </div>
+    </div>
+    <div class="col-sm-12 part-2-icon">
+        <a style="color:#333;" href="#part_3_aseem"><i class="fa fa-angle-down down-icon-size" aria-hidden="true"></i></a>
+      </div>
+  </div>
+
+  <div class="row" id="part_3_aseem">
+
+   <div class="col-sm-12 part-3-bg">
+     <div class="col-sm-1"></div>
+     <div class="col-sm-3 aseem-bg-color">
+       <div class="col-sm-12 aseem-img-margin">
+         <img class="aseem-img" src="img/Aseemlogo.svg">
+       </div>
+
+       <div class="col-sm-12 aseem-text-margin">
+         <span class="aseem-text">My Captain is a youth-mentoring-youth initiative, where graduate students with outstanding achievements in the fields of their passions, mentor and guide young students who share similar aspirations.</span><br><br>
+          The students choose their passions and interests, find Captains and connect with them. The students (and even their parents) will be able to interact with Captains.
+       </div>
+
+       <div class="col-sm-12 text-center aseem-text-margin">
+         <a href=""><span class="aseem-link"><u>Know More About My Captain</u></span></a>
+       </div>
+
+     </div>
+     <div class="col-sm-2 aseem-icon-pos">
+        <div class="col-sm-12 part-2-icon">
+        <a style="color:#ef4665;" href="#part_3_my-captain"><i class="fa fa-angle-down down-icon-size" aria-hidden="true"></i></a>
+      </div>
+     </div>
+   </div>
+
+    
+  </div>
+
+  <div class="row" id="part_3_my-captain">
+
+   <div class="col-sm-12 part-3-bg">
+     <div class="col-sm-1"></div>
+     <div class="col-sm-3 mycaptain-bg-color">
+       <div class="col-sm-12 aseem-img-margin">
+         <img src="img/mycaptainlogo.svg" class="aseem-img">
+       </div>
+
+       <div class="col-sm-12 aseem-img-margin">
+         <span class="aseem-text">My Captain is a youth-mentoring-youth initiative, where graduate students with outstanding achievements in the fields of their passions, mentor and guide young students who share similar aspirations.</span><br><br>
+          The students choose their passions and interests, find Captains and connect with them. The students (and even their parents) will be able to interact with Captains.
+       </div>
+
+       <div class="col-sm-12 text-center aseem-text-margin">
+         <a href=""><span class="mycaptain-link"><u>Know More About My Captain</u></span></a>
+       </div>
+     </div>
+     <div class="col-sm-2 mycaptain-icon-pos">
+        <div class="col-sm-12 part-2-icon">
+        <a style="color:#ef4665;" href="#part_3_climber"><i class="fa fa-angle-down down-icon-size" aria-hidden="true"></i></a>
+      </div>
+     </div>
+   </div>
+    
+  </div>
+
+  <div class="row" id="part_3_climber">
+
+   <div class="col-sm-12 part-3-bg">
+     <div class="col-sm-1"></div>
+     <div class="col-sm-3 climberorg-bg-color">
+       <div class="col-sm-12 aseem-img-margin">
+         <img src="img/logo-climber.svg" class="climberorg-img">
+       </div>
+
+       <div class="col-sm-12 aseem-text-margin">
+         <span class="aseem-text">My Captain is a youth-mentoring-youth initiative, where graduate students with outstanding achievements in the fields of their passions</span><br><br>
+          The students choose their passions and interests, find Captains and connect with them.
+       </div>
+
+       <div class="col-sm-12 text-center aseem-text-margin">
+         <a href=""><span class="climberorg-link"><u>Know More About My Captain</u></span></a>
+       </div>
+     </div>
+     <div class="col-sm-2 mycaptain-icon-pos">
+        <div class="col-sm-12 part-2-icon">
+        <a style="color:#ef4665;" href="#part_4"><i class="fa fa-angle-down down-icon-size" aria-hidden="true"></i></a>
+      </div>
+     </div>
+   </div>
+    
+  </div>
+
+  <div class="row part-4-div" id="part_4">
+
+   <div class="col-sm-12 part-4-div-bg">
+   <div class="col-sm-4 text-center part-4-text-margin">
+     <span class="part-4-text">We're good at winning</span>
+   </div>
+   <div class="col-sm-8 part-4-img-div-margin">
+     <div class="col-sm-2 part-4-img-bg"><img src="img/part-4-assets/Achievement1.jpg"  height="130" width="100%" class="part-4-img"></div>
+     <div class="col-sm-2 part-4-margin part-4-img-bg"><img src="img/part-4-assets/Achievement2.png" height="130" width="100%" class="part-4-img"></div>
+     <div class="col-sm-2 part-4-margin part-4-img-bg"><img src="img/part-4-assets/Achievement3.jpg" height="130" width="100%" class="part-4-img"></div>
+     <div class="col-sm-2 part-4-margin part-4-img-bg"><img src="img/part-4-assets/Achievement4.png" height="130" width="100%" class="part-4-img"></div>
+    <div class="col-sm-2 pull-right text-center aseem-text-margin">
+       <i class="fa fa-angle-double-right part-4-right-icon" aria-hidden="true"></i>
+     </div>
+   </div>
+    
+   </div>
+   <div class="col-sm-12 part-4-div-2-bg">
+     <div class="col-sm-4 text-center part-4-text-margin">
+     <span class="part-4-text">We're also in the news</span>
+     </div>
+     <div class="col-sm-8 part-4-img-div-margin">
+     <div class="col-sm-2 part-4-img-bg"><img src="img/part-4-assets/news1.png"  height="130" width="100%" class="part-4-img"></div>
+     <div class="col-sm-2 part-4-margin part-4-img-bg"><img src="img/part-4-assets/news2.jpg" height="130" width="100%" class="part-4-img"></div>
+     <div class="col-sm-2 part-4-margin part-4-img-bg"><img src="img/part-4-assets/news3.png" height="130" width="100%" class="part-4-img"></div>
+     <div class="col-sm-2 part-4-margin part-4-img-bg"><img src="img/part-4-assets/news5.jpg" height="130" width="100%" class="part-4-img"></div>
+     
+     <div class="col-sm-2 pull-right text-center aseem-text-margin">
+       <i class="fa fa-angle-double-right part-4-right-icon" aria-hidden="true"></i>
+     </div>
+   </div>
+   </div>
+
+   <div class="col-sm-12 part-4-down-icon">
+        <a style="color:#333;" href="#part_5"><i class="fa fa-angle-down down-icon-size" aria-hidden="true"></i></a>
+    </div>
+    
+  </div>
+
+  <div class="row part-5-div" id="part_5">
+
+   <div class="col-sm-12 part-5-div-margin">
+     <div class="col-sm-2 part-5-text-margin">
+     <span class="part-5-heading">THE PEOPLE</span><br>
+     <div class="part-5-text-div"><span class="part-5-text">My Captain is a youth-mentoring-youth initiative, where graduate students with outstanding achievements in the fields of their passions The students choose their passions and interests, find Captains and connect with them. The students (and even their parents) will be able to interact with Captains.</span>
+     </div>
+     </div>
+     <div class="col-sm-9 text-center">
+       <div class="col-sm-3"><img src="img/Zeeshan.png">
+       <div style="margin-top:10px;">
+       <a href=""><i class="fa fa-facebook-official icon-facebook" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+       </div>
+       </div>
+       <div class="col-sm-3">
+       <img src="img/Sameer.png">
+       <div style="margin-top:10px;">
+       <a href=""><i class="fa fa-facebook-official icon-facebook" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+       </div>
+       </div>
+       <div class="col-sm-3">
+       <img src="img/Fatema.png">
+       <div style="margin-top:10px;">
+       <a href=""><i class="fa fa-facebook-official icon-facebook" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+       </div>
+       </div>
+       <div class="col-sm-3">
+       <img src="img/Ruhan.png">
+       <div style="margin-top:10px;">
+       <a href=""><i class="fa fa-facebook-official icon-facebook" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+       </div>
+       </div>
+     </div>
+     
+   </div>
+
+   <div class="col-sm-12 text-center aseem-text-margin">
+     <span class="part-5-heading">A line about how it’s not just us but everybody in the org who is responsible for how amazing we are</span>
+   </div>
+
+   <div class="col-sm-12 part-5-icon-pos">
+        <a style="color:#333;" href="#part_6"><i class="fa fa-angle-down down-icon-size" aria-hidden="true"></i></a>
+      </div>
+    
+  </div>
+
+  <div class="row part-6-div" id="part_6">
+
+   <div class="col-sm-12 aseem-text-margin">
+     <div class="col-sm-2 part-6-div-margin">
+     <span class="part-5-heading">UPCOMING EVENTS</span><br>
+     <div class="part-5-text-div"><span class="part-6-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</span>
+     </div>
+     </div>
+     <div class="col-sm-8 text-center">
+       <div class="col-sm-6">
+       <img src="img/Website_event_template-01.png" height="380px">
+       <div class="part-6-book-margin">
+       <a href="" style="color:black;"><span><u>Book your ticket now</u></span></a>
+       </div>
+       </div>
+       <div class="col-sm-6">
+        <span class="roll" style="font-size:22px;color:white;">
+         <i class="fa fa-facebook-official part-6-fb-icon" aria-hidden="true"></i>
+        </span>
+       <img src="img/Website_event_template-02.png" height="380px">
+       <div class="part-6-book-margin">
+       <a href="" style="color:black;"><span><u>Book your ticket now</u></span></a>
+       </div>
+       </div>
+     </div>
+     
+   </div>
+
+
+   <div class="col-sm-12 footer-div">
+       <div class="col-sm-6 footer-text-div">
+        <a href=""><span><u>Contact us</u></span></a>
+        <a href=""><span class="footer-padding"><u>Work with us</u></span></a>
+        <a href=""><span class="footer-padding"><u>My Captain</u></span></a>
+       </div>
+       <div class="col-sm-4 text-center pull-right copyright-text"><span> © 2016 - 2020 climber.in. All rights reserved.</span></div>
+   </div>
+    
+  </div>
+  
+</body>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript">
+    (function ($) {
+      $(document).ready(function(){
+
+        // hide .navbar first
+        $(".navbar").hide();
+
+        // fade in .navbar
+        $(function () {
+            $(window).scroll(function () {
+
+                     // set distance user needs to scroll before we start fadeIn
+                if ($(this).scrollTop() > 40) {
+                    $('.navbar').fadeIn();
+                } else {
+                    $('.navbar').fadeOut();
+                }
+            });
+        });
+
+    });
+      }(jQuery));
+
+    $(function() {
+    // OPACITY OF BUTTON SET TO 0%
+    $(".roll").css("opacity","0");
+     
+    // ON MOUSE OVER
+    $(".roll").hover(function () {
+     
+    // SET OPACITY TO 70%
+    $(this).stop().animate({
+    opacity: .8
+    }, "slow");
+    },
+     
+    // ON MOUSE OUT
+    function () {
+     
+    // SET OPACITY BACK TO 50%
+    $(this).stop().animate({
+    opacity: 0
+    }, "slow");
+    });
+    });
+
+  </script>
+
+</html>
